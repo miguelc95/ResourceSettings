@@ -28,7 +28,6 @@ class ViewController: UIViewController {
     }
     
     func cargarSettings(){
-        UserDefaults.standard.synchronize()
         let defaults = UserDefaults.standard
         tfNombre.text = defaults.value(forKey: "nombreUsuario") as? String
         tfSonido.text = String(describing: defaults.bool(forKey: "sonido"))
