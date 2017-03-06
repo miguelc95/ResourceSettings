@@ -31,6 +31,8 @@ class SegundoViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(swSonido.isOn, forKey: "sonido")
         defaults.set(slVolumen.value, forKey: "volumen")
+        UserDefaults.standard.synchronize()
+
     }
     
 
